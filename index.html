@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Lista Codificada de Kylo Ren</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Vídeo de Background -->
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Áudio de Tema -->
+    <audio id="theme-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="container">
+      <!-- Descrição do Desafio -->
+      <div class="challenge-description">
+        <h1>A Lista Codificada de Kylo Ren</h1>
+        <p>
+          A Primeira Ordem está em perseguição implacável aos membros da Resistência. Kylo Ren recebe uma lista secreta
+          de alvos que precisa ser codificada com um feitiço criptográfico especial.
+        </p>
+        <div class="rules">
+          <h3>Regras de Codificação:</h3>
+          <ul>
+            <li><strong>Vogais:</strong> a→e, e→i, i→o, o→u, u→a</li>
+            <li><strong>Consoantes:</strong> Próxima letra (b→c, z→b)</li>
+            <li><strong>Camuflagem na Força:</strong> Posições pares = letra espelhada (A↔Z, B↔Y)</li>
+            <li><strong>Números:</strong> São duplicados no resultado final</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Input de Entrada -->
+      <div class="input-section">
+        <label for="target-input">Digite o nome do alvo:</label>
+        <input type="text" id="target-input" placeholder="Ex: LeiaOrgana, Finn, KyloRen!" autocomplete="off" />
+      </div>
+
+      <!-- Botões de Ação -->
+      <div class="buttons-section">
+        <button id="encode-btn" class="action-btn">DECIFRAR</button>
+        <button id="reset-btn" class="action-btn">RETORNAR</button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h2>Resultado da Codificação</h2>
+        <div class="result-content" id="result-content">
+          <!-- O resultado será inserido aqui dinamicamente -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
