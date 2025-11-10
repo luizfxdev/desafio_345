@@ -21,7 +21,7 @@ Implemente uma função chamada `codificarAlvo` em JavaScript que aceita um nome
 - **Caracteres Especiais**: Ignore e mantenha números e símbolos
 
 ### Exemplos:
-- `codificarAlvo('LeiaOrgana')` retorna `'NiouUspene'`
+- `codificarAlvo('LeiaOrgana')` retorna `'NileFssele'`
 - `codificarAlvo('Finn')` retorna `'Joppo'`
 - `codificarAlvo('KyloRen!')` retorna `'LznpSip!'`
 
